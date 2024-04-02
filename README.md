@@ -49,7 +49,8 @@ Otwórz przeglądarkę i wprowadź adres URL do twojego projektu: http://localho
 
 
 
-![baza]https://github.com/Bartlomiejste/qrcode/blob/main/1.png
+![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/1.png)
+
 
 
 
