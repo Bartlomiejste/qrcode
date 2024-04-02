@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prześlij dokument PDF z kodem QR</title>
+    <!-- Link do pliku CSS zewnętrznego definiującego style strony -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Skrypt PDF.js służący do renderowania plików PDF w przeglądarce -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+    <script>
+        // Ustawienie ścieżki do workera PDF.js, który jest wykorzystywany do asynchronicznego przetwarzania PDF-ów
+        pdfjsLib.GlobalWorkerOptions.workerSrc =
+            'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
+    </script>
+
+    <!-- Biblioteka jsQR do skanowania i dekodowania kodów QR z obrazów -->
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+
+    <!-- SweetAlert2, biblioteka do tworzenia eleganckich okien dialogowych (alertów), np. do potwierdzeń -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Główny skrypt JavaScript strony, zawierający logikę biznesową, np. obsługę formularzy -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="main-container">
+        <!-- Główny formularz do przesyłania plików PDF -->
+        <form id="upload-form" method="post" enctype="multipart/form-data">
+            <label for="pdf_file">Wybierz plik PDF do przesłania:</label>
+            <input type="file" name="pdf_file" id="pdf_file" accept="application/pdf" required>
+            <!-- Ukryte pole do przechowywania odczytanego z pliku PDF kodu QR -->
+            <input type="hidden" name="qrData" id="qrData">
+            <button type="submit">Prześlij plik PDF</button>
+        </form>
+
+        <!-- Ukryty formularz dla ręcznego wprowadzenia kodu QR, widoczny tylko w przypadku błędów z odczytem kodu z pliku -->
+        <div id="manualEntry" style="display:none;">
+            <label for="manualQRCode">Wprowadź ręcznie kod QR:</label>
+            <input type="text" id="manualQRCode" name="manualQRCode">
+            <button type="button" class="manualbutton" onclick="manualQRSubmit()">Prześlij kod</button>
+        </div>
+    </div>
+</body>
+
+</html>
