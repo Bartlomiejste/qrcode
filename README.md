@@ -27,6 +27,12 @@ Aby uruchomić projekt lokalnie, potrzebujesz:
 - Dowolna przeglądarka internetowa.
 
 ![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/1.png)
+![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/2.png)
+![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/3.png)
+![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/4.png)
+![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/5.png)
+![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/6.png)
+![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/7.png)
 
 
 ## Instalacja i Uruchomienie
