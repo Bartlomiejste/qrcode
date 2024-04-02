@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -26,21 +26,23 @@
 </head>
 
 <body>
-    <div id="main-container">
-        <!-- Główny formularz do przesyłania plików PDF -->
-        <form id="upload-form" method="post" enctype="multipart/form-data">
-            <label for="pdf_file">Wybierz plik PDF do przesłania:</label>
-            <input type="file" name="pdf_file" id="pdf_file" accept="application/pdf" required>
-            <!-- Ukryte pole do przechowywania odczytanego z pliku PDF kodu QR -->
-            <input type="hidden" name="qrData" id="qrData">
-            <button type="submit">Prześlij plik PDF</button>
-        </form>
+    <div class="content-container">
+        <div id="main-container">
+            <!-- Główny formularz do przesyłania plików PDF -->
+            <form id="upload-form" method="post" enctype="multipart/form-data">
+                <label for="pdf_file">Wybierz plik PDF do przesłania:</label>
+                <input type="file" name="pdf_file" id="pdf_file" accept="application/pdf" required>
+                <!-- Ukryte pole do przechowywania odczytanego z pliku PDF kodu QR -->
+                <input type="hidden" name="qrData" id="qrData">
+                <button type="submit">Prześlij plik PDF</button>
+            </form>
 
-        <!-- Ukryty formularz dla ręcznego wprowadzenia kodu QR, widoczny tylko w przypadku błędów z odczytem kodu z pliku -->
-        <div id="manualEntry" style="display:none;">
-            <label for="manualQRCode">Wprowadź ręcznie kod QR:</label>
-            <input type="text" id="manualQRCode" name="manualQRCode">
-            <button type="button" class="manualbutton" onclick="manualQRSubmit()">Prześlij kod</button>
+            <!-- Ukryty formularz dla ręcznego wprowadzenia kodu QR, widoczny tylko w przypadku błędów z odczytem kodu z pliku -->
+            <div id="manualEntry" style="display:none;">
+                <label for="manualQRCode">Wprowadź ręcznie kod QR:</label>
+                <input type="text" id="manualQRCode" name="manualQRCode">
+                <button type="button" class="manualbutton" onclick="manualQRSubmit()">Prześlij kod</button>
+            </div>
         </div>
     </div>
 </body>
