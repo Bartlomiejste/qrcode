@@ -47,7 +47,6 @@ Uruchom serwer Apache/Nginx. Dla Apache w XAMPP, możesz to zrobić za pomocą P
 
 Otwórz przeglądarkę i wprowadź adres URL do twojego projektu: http://localhost/qr
 
-```sh
 
 ![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/1.png)
 
