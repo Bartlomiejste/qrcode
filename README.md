@@ -26,6 +26,9 @@ Aby uruchomić projekt lokalnie, potrzebujesz:
 - PHP w wersji 7.0 lub wyższej.
 - Dowolna przeglądarka internetowa.
 
+![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/1.png)
+
+
 ## Instalacja i Uruchomienie
 
 ### Krok 1: Klonowanie Repozytorium
@@ -46,10 +49,3 @@ Uruchom serwer Apache/Nginx. Dla Apache w XAMPP, możesz to zrobić za pomocą P
 ### Krok 4: Dostęp do Aplikacji
 
 Otwórz przeglądarkę i wprowadź adres URL do twojego projektu: http://localhost/qr
-
-
-![baza](https://raw.githubusercontent.com/Bartlomiejste/qrcode/main/1.png)
-
-
-
-
